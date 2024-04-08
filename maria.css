@@ -1,3 +1,22 @@
 h1 {
   font-family: "Antiqua Roman", serif;
+  color: white;
 }
+
+/*
+.background {
+  display: flex;
+  width: 100%;
+}
+
+.bild {
+  flex: 1;
+  width: 100%;
+}
+
+.bild1 img,
+.bild2 img {
+  width: 100%;
+  height: auto;
+}
+*/
