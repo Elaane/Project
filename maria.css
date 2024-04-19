@@ -1,9 +1,3 @@
-h1 {
-  font-family: "Antiqua Roman", serif;
-  padding-left: 10px;
-  color: white;
-}
-
 body {
   background-color: black;
   background-image: url(rödring.jpeg);
@@ -11,31 +5,52 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.menu-banner {
-  background-color: rgba(128, 128, 128, 0.5);
-  padding: 10px 20px;
-  display: flex;
+
+h1 {
+  font-family: "Antiqua Roman", serif;
+  padding-right: 0px;
+  padding-top: 0px;
+  margin: 0px;
+  color: white;
 }
-.menu-banner .smycken ul {
+.meny {
+  padding: 1px 2px;
+  display: flex;
+  justify-content: center;
+}
+
+.smycken {
+  padding-left: 0px;
+}
+
+ul {
+  padding-bottom: 0px;
+}
+
+.meny ul {
   list-style-type: none;
   display: flex;
-  align-items: center;
   margin: 0;
   padding: 0;
 }
 
-.menu-banner .smycken ul li {
+.meny ul li {
   display: flex;
 }
 
-.menu-banner .smycken ul li a {
+.meny ul li a {
   color: white;
   text-decoration: none;
   padding: 10px 20px;
 }
-.smycken {
-  align-items: center;
+
+.påse img {
+  height: 50px;
+  width: auto;
+}
+
+.påse {
   display: flex;
-  padding-left: 50px;
-  justify-content: center;
+  padding-left: 0px;
+  padding-top: 20px;
 }
