@@ -1,0 +1,115 @@
+body {
+  background-color: black;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+.text,
+.kost {
+  font-family: "ITC Cushing Std";
+  color: white;
+}
+
+h1 {
+  display: flex;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 7%;
+  margin-left: 1.5%;
+  overflow: hidden;
+}
+
+img {
+  width: 92%;
+  height: 92%;
+}
+
+.Bilder {
+  box-shadow: 0 0 0 transparent;
+  transition: box-shadow 0.3s ease;
+  position: relative;
+}
+
+/*.glow {
+  box-shadow: 0 0 11px 6px rgba(255, 255, 255, 0.2);
+}*/
+
+.info {
+  position: relative;
+}
+
+.text,
+.kost {
+  position: absolute;
+  padding: 5px;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.kost {
+  bottom: 0;
+  left: 0;
+}
+
+.text {
+  top: 0;
+  left: 0;
+}
+
+.påse img {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.påse {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 35px;
+  width: auto;
+  margin-right: 25px;
+}
+
+.handla {
+  display: flex;
+  justify-content: space-between;
+}
+
+.handla img {
+  height: 50px;
+  width: auto;
+}
+
+.kasse {
+  padding-top: 16px;
+  padding-right: 12px;
+}
+
+.pil img {
+  height: 20px;
+  width: auto;
+}
+
+.pil {
+  margin-top: 5%;
+  padding-left: 47%;
+  display: flex;
+}
+
+a {
+  padding-top: 11px;
+  padding-right: 25px;
+}
+
+p {
+  color: white;
+  font-family: "ITC Cushing Std";
+  font-size: smaller;
+}
