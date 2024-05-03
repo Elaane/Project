@@ -92,24 +92,43 @@ img {
   padding-right: 12px;
 }
 
-.pil img {
+.pil img,
+.tillbaks img,
+.baka img {
   height: 20px;
   width: auto;
 }
 
 .pil {
-  margin-top: 5%;
-  padding-left: 47%;
   display: flex;
+  margin-top: 5%;
+}
+
+.tillbaks {
+  display: flex;
+  margin-top: 5%;
+  padding-left: 43%;
 }
 
 a {
   padding-top: 11px;
-  padding-right: 25px;
+  padding-right: 0px;
 }
 
 p {
   color: white;
   font-family: "ITC Cushing Std";
   font-size: smaller;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.baka {
+  display: flex;
+  margin-top: 5%;
+}
+
+.nav {
+  display: flex;
+  padding-left: 42%;
 }
