@@ -60,10 +60,9 @@ ul {
 
 .påse {
   display: flex;
-  padding-left: 0px;
+  padding-left: 200px;
   padding-top: 15px;
   padding-right: 10px;
-  width: 250px;
 }
 
 a,
@@ -119,4 +118,5 @@ h2 {
   width: 9%;
   justify-content: center;
   align-items: center;
+  transition: opacity 0.15s ease-in-out;
 }
