@@ -25,15 +25,12 @@ h1 {
   overflow: hidden;
 }
 
-img {
-  width: 92%;
-  height: 92%;
-}
-
 .Bilder {
   box-shadow: 0 0 0 transparent;
   transition: box-shadow 0.3s ease;
   position: relative;
+  width: 92%;
+  height: 92%;
 }
 
 /*.glow {
@@ -65,6 +62,8 @@ img {
 .påse img {
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
+  width: 92%;
+  height: 92%;
 }
 
 .påse {
@@ -143,9 +142,4 @@ p {
 .nav {
   display: flex;
   padding-left: 42%;
-}
-
-.bob img {
-  height: 2px;
-  width: auto;
 }
