@@ -70,8 +70,6 @@ h1 {
   position: absolute;
   right: 0;
   bottom: 0;
-  height: 35px;
-  width: auto;
   margin-right: 25px;
 }
 
@@ -142,4 +140,17 @@ p {
 .nav {
   display: flex;
   padding-left: 42%;
+}
+
+#läggTill {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+#läggTill img {
+  height: 35px;
+  width: auto;
+  display: block;
 }

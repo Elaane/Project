@@ -1,11 +1,14 @@
 
-const images = document.querySelectorAll(".Bilder");
-
 const scaleFactor = 1.2;
 
-images.forEach(image => {
+document.querySelectorAll(".info").forEach(container => {
+  const image = container.querySelector(".Bilder");
+ 
+  /*image.forEach(container => {
   const startHeight = image.height;
   const startWidth = image.width;
+  */
+
   image.style.transition = "transform 0.5s ease";
 
   const text = image.nextElementSibling;
@@ -16,19 +19,20 @@ images.forEach(image => {
   kost.style.opacity = 0;
   påse.style.opacity = 0;
 
-image.addEventListener("mouseover",() => {
-image.style.transform = `scale(${scaleFactor})`;
-text.style.opacity = 1; 
-kost.style.opacity = 1;  
-påse.style.opacity = 1;
-image.classList.add("glow");
-});
+  container.addEventListener("mouseover",() => {
+   image.style.transform = `scale(${scaleFactor})`;
+   text.style.opacity = 1; 
+    kost.style.opacity = 1;  
+    påse.style.opacity = 1;
+    image.classList.add("glow");
+  });
 
-image.addEventListener("mouseout",() => {
+  container.addEventListener("mouseout",() => {
     image.style.transform = "scale(1)";
     text.style.opacity = 0; 
     kost.style.opacity = 0;
     påse.style.opacity = 0;
     image.classList.remove("glow");
+  });
 });
-});
+
