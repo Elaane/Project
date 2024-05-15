@@ -142,14 +142,14 @@ p {
   padding-left: 42%;
 }
 
-#läggTill {
+.add-ring {
   border: none;
   background: none;
-  padding: 0;
+  padding-left: 5%;
   cursor: pointer;
 }
 
-#läggTill img {
+.add-ring img {
   height: 35px;
   width: auto;
   display: block;
