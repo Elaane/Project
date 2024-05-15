@@ -1,9 +1,9 @@
-document.querySelectorAll('.add-ring').forEach(button => {
-  button.addEventListener('click', () => {
+document.querySelectorAll(".add-X").forEach(button => {
+  button.addEventListener("click", () => {
       
       const product = {
-          name: button.getAttribute('data-name'),
-          price: parseFloat(button.getAttribute('data-price'))
+          name: button.getAttribute("data-name"),
+          price: parseFloat(button.getAttribute("data-price"))
       };
       
       addProductToLocalStorage(product);

@@ -48,3 +48,19 @@ h2 {
   text-align: center;
   width: 100%;
 }
+
+#total-cost {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.x {
+  height: 20px;
+  width: auto;
+}
+
+button {
+  background: none;
+  border: none;
+}

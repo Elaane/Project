@@ -1,24 +1,28 @@
 let korgDiv = document.getElementById("korg");
+let totalCostDiv = document.getElementById("total-cost");
 
 function vissaProdukter() {
   korgDiv.innerHTML = ""; 
   
   let products = JSON.parse(localStorage.getItem("products"));
+  let totalCost=0;
 
   if (products && Array.isArray(products) && products.length > 0) {
     products.forEach((product, index) => {
       korgDiv.insertAdjacentHTML(
         "beforeend",
         `<div class="korg-item" data-index="${index}">
-          <div class="korg-text">Namn: ${product.name} Pris: ${product.price}</div>
-          <button class="delete-btn">Delete</button>
+          <div class="korg-text"> ${product.name} - ${product.price} SEK</div>
+          <button class="delete-btn"><img src = "bilder/cross.png" class="x" alt= "X"/></button>
         </div>`
       );
+      totalCost += product.price;
     });
-  
+    
   } else {
     korgDiv.insertAdjacentHTML("beforeend", `<div>Varukorgen är tom.</div>`);
   }
+  updateTotalCost(totalCost); 
 }
 
 function taBortProdukt(event) {
@@ -34,8 +38,12 @@ function taBortProdukt(event) {
   }
 }
 
-document.addEventListener('click', function(event) {
-  if (event.target.classList.contains('delete-btn')) {
+function updateTotalCost(totalCost) {
+  totalCostDiv.textContent = `SUMMAN: ${totalCost} SEK`;
+}
+
+document.addEventListener("click", function(event) {
+  if (event.target.classList.contains("x")) {
     taBortProdukt(event); 
   }
 });

@@ -142,14 +142,14 @@ p {
   padding-left: 42%;
 }
 
-.add-ring {
+.add-X {
   border: none;
   background: none;
   padding-left: 5%;
   cursor: pointer;
 }
 
-.add-ring img {
+.add-X img {
   height: 35px;
   width: auto;
   display: block;
