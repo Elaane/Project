@@ -8,6 +8,17 @@ h2 {
   padding-right: 1%;
 }
 
+h3 {
+  font-family: "ITC Cushing Std";
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+h3:hover {
+  color: gray;
+}
+
 .handla {
   display: flex;
   justify-content: space-between;
@@ -49,18 +60,29 @@ h2 {
   width: 100%;
 }
 
-#total-cost {
+#total-kost {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .x {
-  height: 20px;
+  height: 19px;
   width: auto;
 }
 
 button {
   background: none;
   border: none;
+}
+
+.pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kart {
+  padding-left: 0.5%;
+  font-size: 20px;
 }

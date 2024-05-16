@@ -83,14 +83,14 @@ h1 {
   width: auto;
 }
 
-.kasse,
-.log {
-  padding-top: 16px;
-  padding-right: 12px;
+.kasse {
+  padding-top: 0px;
+  padding-right: 0px;
 }
 
 .log {
-  padding-left: 12px;
+  padding-left: 10px;
+  padding-top: 12px;
 }
 
 .pil img,
@@ -120,8 +120,9 @@ h1 {
 }
 
 a {
-  padding-top: 11px;
   padding-right: 0px;
+  margin-right: 0%;
+  padding-top: 10px;
 }
 
 p {
@@ -140,6 +141,7 @@ p {
 .nav {
   display: flex;
   padding-left: 42%;
+  padding-bottom: 2%;
 }
 
 .add-X {
@@ -153,4 +155,29 @@ p {
   height: 35px;
   width: auto;
   display: block;
+}
+
+#cart-count {
+  display: flex;
+  background-color: white;
+  border-radius: 10px;
+  height: 20px;
+  width: 10px;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+.kart {
+  background-color: white;
+  border-radius: 10px;
+  height: 20px;
+  width: 10px;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+.hörn {
+  display: flex;
+  padding-top: 15px;
+  padding-right: 10px;
 }

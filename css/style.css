@@ -1,19 +1,128 @@
-body {
-  background-color: black;
-  background-image: url(rödring.jpeg);
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-}
-
 h1 {
   font-family: "Antiqua Roman", serif;
   padding-right: 0px;
   padding-top: 15px;
-  padding-left: 10px;
+  padding-left: 0px;
   margin: 0px;
   color: white;
+}
+
+.påse img {
+  height: 50px;
+  width: auto;
+  margin-left: auto;
+}
+
+.påse {
+  display: flex;
+  padding-left: 160px;
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
+a,
+h2 {
+  font-family: "ITC Cushing Std";
+  color: white;
+}
+
+.insta,
+.tik,
+.xx,
+.face {
+  height: 20px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.p-info {
+  display: flex;
+  padding-top: 13%;
+  padding-left: 17%;
+  align-items: center;
+  justify-content: center;
+}
+
+.punkt {
+  height: 50px;
+  width: auto;
+}
+
+.text {
+  display: flex;
+  font-family: "ITC Cushing Std";
+  color: black;
+  border-radius: 20px;
+  background-color: white;
+  width: 9%;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.15s ease-in-out;
+}
+
+.kart {
+  background-color: white;
+  border-radius: 10px;
+  height: 20px;
+  width: 10px;
+  padding-left: 2px;
+  padding-top: 1px;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+footer {
+  position: absolute;
+  bottom: 01;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.mainBody {
+  background-image: url(rödring.jpeg);
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: calc(100vh + 100px);
+  background-size: cover;
+  padding-left: 2%;
+  margin: 0%;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+  font-size: large;
+  font-family: "ITC Cushing Std";
+}
+
+.meny ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.meny ul li a:hover {
+  filter: brightness(50%);
 }
 
 .meny {
@@ -50,73 +159,4 @@ ul {
 
 .meny h1 {
   width: 250px;
-}
-
-.påse img {
-  height: 50px;
-  width: auto;
-  margin-left: auto;
-}
-
-.påse {
-  display: flex;
-  padding-left: 200px;
-  padding-top: 15px;
-  padding-right: 10px;
-}
-
-a,
-h2 {
-  font-family: "ITC Cushing Std";
-  color: white;
-}
-
-h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 3%;
-  font-size: small;
-}
-
-.insta,
-.tik,
-.xx,
-.face {
-  height: 20px;
-  width: auto;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2%;
-}
-
-.p-info {
-  display: flex;
-  padding-top: 13%;
-  padding-left: 17%;
-  align-items: center;
-  justify-content: center;
-}
-
-.punkt {
-  height: 50px;
-  width: auto;
-}
-
-.text {
-  display: flex;
-  font-family: "ITC Cushing Std";
-  color: black;
-  border-radius: 20px;
-  background-color: white;
-  width: 9%;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 0.15s ease-in-out;
 }

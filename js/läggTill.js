@@ -1,24 +1,15 @@
-document.querySelectorAll(".add-X").forEach(button => {
-  button.addEventListener("click", () => {
-      
+document.addEventListener("click", function(event) {
+  if (event.target.closest(".add-X")) {
+      const button = event.target.closest(".add-X");
       const product = {
           name: button.getAttribute("data-name"),
           price: parseFloat(button.getAttribute("data-price"))
       };
-      
-      addProductToLocalStorage(product);
-  });
-});
 
-
-function addProductToLocalStorage(product) {
-  let products = JSON.parse(localStorage.getItem("products")) || [];
-
-  if (products && Array.isArray(products)) {
+      let products = JSON.parse(localStorage.getItem("products")) || [];
       products.push(product);
-  } else {
-      products = [product];
+      localStorage.setItem("products", JSON.stringify(products));
+      
+      triggerCartUpdateEvent();
   }
-
-  localStorage.setItem("products", JSON.stringify(products));
-}
+});

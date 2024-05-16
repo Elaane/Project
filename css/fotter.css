@@ -1,0 +1,54 @@
+footer {
+  position: absolute;
+  bottom: 01;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.mainBody {
+  background-position: center top;
+  background-repeat: no-repeat;
+  min-height: calc(100vh + 100px);
+  background-size: cover;
+  padding-left: 1%;
+  margin: 0%;
+}
+
+.insta,
+.tik,
+.xx,
+.face {
+  height: 20px;
+  width: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+body {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 3%;
+  font-size: large;
+  font-family: "ITC Cushing Std";
+}
+
+.nästa {
+  margin-bottom: 10%;
+}
