@@ -36,6 +36,45 @@
         </div>
       </a>
     </div>
+    <div class="form">
+      <div class="kontaktform">
+        <h3>Kontakta oss</h3>
+        <form id="contact-form">
+          <label for="namn">Namn</label>
+          <input
+            type="text"
+            id="namn"
+            name="namn"
+            placeholder="Ditt namn.."
+            required
+          />
+
+          <label for="email">E-post</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Din e-postadress.."
+            required
+          />
+
+          <label for="meddelande">Meddelande</label>
+          <textarea
+            id="meddelande"
+            name="meddelande"
+            placeholder="Skriv ditt meddelande här.."
+            style="height: 100px"
+            required
+          ></textarea>
+
+          <input type="submit" value="Skicka" />
+        </form>
+
+        <div id="bekraftelse" style="display: none">
+          Tack för ditt meddelande! Vi återkommer snart.
+        </div>
+      </div>
+    </div>
     <footer>
       <h2>HÄR HITTAR DU OSS!</h2>
       <div class="social">
@@ -52,10 +91,12 @@
           ><img src="bilder/twitter.png" alt="twitter" class="xx"
         /></a>
       </div>
+      <p>&copy; 2024 Maria Nill-Son. Alla rättigheter förbehållna.</p>
     </footer>
   </body>
   <script src="js/varukorg.js"></script>
   <script src="js/generel.js"></script>
   <script src="js/numr.js"></script>
   <script src="js/javascript.js"></script>
+  <script src="js/kontakt.js"></script>
 </html>

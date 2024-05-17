@@ -33,10 +33,6 @@ h1 {
   height: 92%;
 }
 
-/*.glow {
-  box-shadow: 0 0 11px 6px rgba(255, 255, 255, 0.2);
-}*/
-
 .info {
   position: relative;
 }
@@ -181,6 +177,7 @@ p {
   padding-top: 15px;
   padding-right: 10px;
 }
+
 @media screen and (max-width: 600px) {
   .påse,
   .handla {
@@ -192,6 +189,14 @@ p {
     margin-left: 0;
   }
 
+  .hörn {
+    padding-right: 0;
+    padding-left: 10px;
+  }
+
+  a {
+    padding-right: 5px;
+  }
   .container {
     margin-top: 10%;
     margin-left: 0;
@@ -203,11 +208,25 @@ p {
     opacity: 1;
   }
 
+  .plus {
+    padding-left: 50px;
+    padding-bottom: 80px;
+  }
+
+  .baka {
+    padding-bottom: 30px;
+  }
+
+  .pil {
+    padding-bottom: 30px;
+  }
+
   .påse {
     position: static;
     margin-right: 0;
     margin-bottom: 10px;
   }
+
   .container {
     flex-direction: column;
   }
@@ -218,12 +237,14 @@ p {
   }
 
   .nav {
-    padding-left: 60px;
+    padding-left: 115px;
+    padding-bottom: 40px;
   }
 
   body {
     overflow-x: hidden;
   }
+
   .mainBody {
     overflow-x: hidden;
   }
@@ -233,7 +254,8 @@ p {
   }
 
   .sida {
-    margin-left: 120px;
+    margin-left: 165px;
+    margin-bottom: 50px;
   }
 
   .mainBody {
@@ -243,8 +265,13 @@ p {
   .Bilder {
     padding-left: 5px;
   }
+
   .meny ul {
     flex-direction: column;
+  }
+
+  .nästa {
+    margin: 0px;
   }
   /*kolla vad som behövs - och fixa index - menyn och validera*/
 }

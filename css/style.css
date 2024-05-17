@@ -7,6 +7,12 @@ h1 {
   color: white;
 }
 
+h3 {
+  font-family: "Antiqua Roman", serif;
+  font-size: x-large;
+  color: black;
+}
+
 .påse img {
   height: 50px;
   width: auto;
@@ -79,7 +85,7 @@ h2 {
 }
 
 body {
-  background-color: black;
+  background-color: #333;
   margin: 0;
   overflow-y: auto;
   overflow-x: hidden;
@@ -161,16 +167,93 @@ ul {
   width: 250px;
 }
 
+.form {
+  margin-top: 40px;
+}
+
+.kontaktform {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+.kontaktform h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.kontaktform label,
+.kontaktform input[type="text"],
+.kontaktform textarea {
+  display: block;
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+.kontaktform input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.kontaktform input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+#bekraftelse {
+  margin-top: 10px;
+  padding: 8px;
+  background-color: #dff0d8;
+  border: 1px solid #3c763d;
+  border-radius: 5px;
+  display: none;
+}
+
 @media screen and (max-width: 600px) {
-  .påse {
-    padding-left: 0;
-    padding-right: 0;
-    justify-content: center;
+  .header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meny {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    justify-items: center;
+    width: 100%;
+  }
+
+  .meny ul {
+    display: contents;
+  }
+
+  .meny ul li {
+    display: block;
+    margin: 0;
+    text-align: center;
+  }
+
+  .påse img {
+    height: auto;
+    width: 30px;
+    margin-left: auto;
   }
 
   .p-info {
-    padding-top: 10%;
-    padding-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    padding-top: 35%;
+    margin-left: 30%;
   }
 
   .text {
@@ -180,36 +263,26 @@ ul {
   footer {
     position: relative;
   }
+
   body {
     padding-left: 10px;
     background-color: #333;
+    overflow-x: hidden;
   }
 
   .mainBody img {
-    padding-left: 0px;
+    width: 100%;
+    height: auto;
+    padding-left: 0;
     background-size: cover;
   }
+
   .header-container {
     flex-direction: column;
     align-items: center;
   }
 
-  .meny {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .meny ul {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .meny ul li {
-    margin: 10px 0;
-    text-align: center;
-  }
-
-  .påse {
-    margin-left: 0;
+  .kontaktform {
+    padding: 10px;
   }
 }
