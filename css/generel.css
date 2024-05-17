@@ -158,17 +158,9 @@ p {
   background-color: white;
   border-radius: 10px;
   height: 20px;
-  width: 10px;
-  padding-left: 2px;
-  padding-top: 1px;
-}
-
-.kart {
-  background-color: white;
-  border-radius: 10px;
-  height: 20px;
-  width: 10px;
-  padding-left: 2px;
+  width: 16px;
+  padding-left: 7px;
+  padding-right: 5px;
   padding-top: 1px;
 }
 
@@ -211,14 +203,6 @@ p {
   .plus {
     padding-left: 50px;
     padding-bottom: 80px;
-  }
-
-  .baka {
-    padding-bottom: 30px;
-  }
-
-  .pil {
-    padding-bottom: 30px;
   }
 
   .påse {
