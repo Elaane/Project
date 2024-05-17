@@ -17,7 +17,7 @@ function vissaProdukter() {
               "beforeend",
               `<div class="korg-item" data-index="${index}">
                   <div class="korg-text">${product.name} - ${product.price} SEK</div>
-                  <button class="delete-btn"><img src="bilder/cross.png" class="tunna" alt="X"/></button>
+                  <button class="delete-btn"><img src="bilder/cross.png" class="tunna" alt="släng"/></button>
               </div>`
           );
           totalKost += parseFloat(product.price);
@@ -42,7 +42,7 @@ function taBortProdukt(event) {
 }
 
 document.addEventListener("click", function(event) {
-  if (event.target.classList.contains("x")) {
+  if (event.target.classList.contains("tunna")) {
       taBortProdukt(event); 
   }
 });

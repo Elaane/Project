@@ -52,3 +52,14 @@ h2 {
 .nästa {
   margin-bottom: 10%;
 }
+
+@media screen and (max-width: 600px) {
+  footer {
+    position: relative;
+    padding-right: 10px;
+  }
+
+  h2 {
+    padding-top: 5%;
+  }
+}

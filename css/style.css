@@ -102,7 +102,7 @@ footer {
   background-repeat: no-repeat;
   min-height: calc(100vh + 100px);
   background-size: cover;
-  padding-left: 2%;
+  padding-left: 1%;
   margin: 0%;
 }
 
@@ -159,4 +159,57 @@ ul {
 
 .meny h1 {
   width: 250px;
+}
+
+@media screen and (max-width: 600px) {
+  .påse {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+
+  .p-info {
+    padding-top: 10%;
+    padding-left: 0;
+  }
+
+  .text {
+    width: auto;
+  }
+
+  footer {
+    position: relative;
+  }
+  body {
+    padding-left: 10px;
+    background-color: #333;
+  }
+
+  .mainBody img {
+    padding-left: 0px;
+    background-size: cover;
+  }
+  .header-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meny {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meny ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .meny ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .påse {
+    margin-left: 0;
+  }
 }

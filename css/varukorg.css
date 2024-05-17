@@ -66,7 +66,7 @@ h3:hover {
   justify-content: center;
 }
 
-.x {
+.tunna {
   height: 19px;
   width: auto;
 }
@@ -85,4 +85,31 @@ button {
 .kart {
   padding-left: 0.5%;
   font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 20px;
+  }
+
+  .handla {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .handla img {
+    height: auto;
+    width: 50%;
+  }
+
+  .tunna {
+    height: 15px;
+    width: auto;
+  }
+
+  .log {
+    padding-left: 75px;
+  }
 }

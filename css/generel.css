@@ -181,3 +181,70 @@ p {
   padding-top: 15px;
   padding-right: 10px;
 }
+@media screen and (max-width: 600px) {
+  .påse,
+  .handla {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .påse img {
+    margin-left: 0;
+  }
+
+  .container {
+    margin-top: 10%;
+    margin-left: 0;
+  }
+
+  .text,
+  .kost {
+    position: relative;
+    opacity: 1;
+  }
+
+  .påse {
+    position: static;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .container {
+    flex-direction: column;
+  }
+
+  .info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .nav {
+    padding-left: 60px;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+  .mainBody {
+    overflow-x: hidden;
+  }
+
+  .tillbaks {
+    padding-left: 90px;
+  }
+
+  .sida {
+    margin-left: 120px;
+  }
+
+  .mainBody {
+    padding-left: 0;
+  }
+
+  .Bilder {
+    padding-left: 5px;
+  }
+  .meny ul {
+    flex-direction: column;
+  }
+  /*kolla vad som behövs - och fixa index - menyn och validera*/
+}

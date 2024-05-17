@@ -3,12 +3,6 @@ const scaleFactor = 1.2;
 
 document.querySelectorAll(".info").forEach(container => {
   const image = container.querySelector(".Bilder");
- 
-  /*image.forEach(container => {
-  const startHeight = image.height;
-  const startWidth = image.width;
-  */
-
   image.style.transition = "transform 0.5s ease";
 
   const text = image.nextElementSibling;
