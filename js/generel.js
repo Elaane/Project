@@ -29,4 +29,4 @@ document.querySelectorAll(".info").forEach(container => {
     image.classList.remove("glow");
   });
 });
-
+/* gå egom all js*/

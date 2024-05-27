@@ -15,5 +15,3 @@ document.getElementById("contact-form").addEventListener("submit", function(even
       }, 3000); 
 });
   
-
-  
